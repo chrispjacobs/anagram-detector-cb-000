@@ -1,8 +1,8 @@
 # Your code goes here!
 class Anagram
+  def initialize(word)
     @anagrams_array = []
     @word = String.new
-  def initialize(word)
     @word = word
   end
   def match(input_array)
