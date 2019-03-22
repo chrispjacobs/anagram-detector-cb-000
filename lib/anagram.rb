@@ -16,4 +16,4 @@ class Anagram
 end
 
 hello = Anagram.new("hello")
-puts hello.match("trekking", "hiking", "lehol", "stop", "stupid", "olleh")
+puts hello.match([]"trekking", "hiking", "lehol", "stop", "stupid", "olleh"])
