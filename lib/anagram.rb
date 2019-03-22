@@ -5,11 +5,15 @@ class Anagram
   def initialize(word)
     @word = word
   end
-  def self.match(input_array)
+  def match(input_array)
     input_array.each do |possible_anagram|
       if possible_anagram.split("").sort == @word.split("").sort && possible_anagram != @word
         @anagrams_array << possible_anagram
       end
     end
+    @anagrams_array
   end
 end
+
+hello = Anagram.new("hello")
+hello.match("trekking")
